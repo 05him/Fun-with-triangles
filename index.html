@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiManshu | isTriangle?</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <h1>Fun with Triangles</h1>
+      <div>
+        <button id="isTriangleBtn">isTriangle?</button>
+        <button id="triangleQuizBtn">Triangle Quiz</button>
+        <button id="hypoBtn">Hypotenuse</button>
+        <button id="areaBtn">Area of Triangle</button>
+      </div>
+    </nav>
+    <div id="isTriangleDiv">
+      <h2>isTriangle??</h2>
+      <label for="Angle1">Enter angle 1 </label>
+      <input id="Angle1" type="number" placeholder="angle 1" />
+      <label for="Angle2">Enter angle 2</label>
+      <input id="Angle2" type="number" placeholder="angle2" />
+      <label for="Angle3">Enter angle 3</label>
+      <input id="Angle3" type="number" placeholder="angle3" />
+      <div class="button-div">
+        <button id="isTrinagleCheckBtn">IsTriangle?🧐</button>
+        <button id="isTriangleResetBtn" class="reset">Reset</button>
+      </div>
+      <p id="isTriangleOutput"></p>
+    </div>
+
+    <div id="triangleQuizDiv">
+      <h2>Triangle Quiz</h2>
+      <form class="questionForm">
+        <section class="questions">
+          <p>Q1.) Which of the following trinagles have equal sides</p>
+          <label
+            ><input
+              type="radio"
+              name="q1"
+              value="isos"
+            />Isosceles-Triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="q1"
+              value="equi"
+            />Equilaterl-Triangle</label
+          >
+          <label><input type="radio" name="q1" value="idk" />I dont know</label>
+        </section>
+
+        <section class="questions">
+          <p>Q2.) A scalene triangle has ___ lines of symmetry</p>
+          <label><input type="radio" name="q2" value="no" />No</label>
+          <label><input type="radio" name="q2" value="one" />One</label>
+          <label><input type="radio" name="q2" value="idk" />I dont know</label>
+        </section>
+
+        <section class="questions">
+          <p>Q3.) What is the sum of all angles of trinagle?</p>
+          <label><input type="radio" name="q3" value="180" />180</label>
+          <label><input type="radio" name="q3" value="360" />360</label>
+          <label><input type="radio" name="q3" value="idk" />I dont know</label>
+        </section>
+
+        <section class="questions">
+          <p>Q4.) Guess the angle c in the triangle</p>
+          <img class="guess-img" src="images/guess.png" />
+
+          <label><input type="radio" name="q4" value="180" />180°</label>
+          <label><input type="radio" name="q4" value="70" />70°</label>
+          <label><input type="radio" name="q4" value="idk" />I dont know</label>
+        </section>
+
+        <section class="questions">
+          <p>Q5.) Which among the following is a obtuse angle Triangle?</p>
+
+          <label>
+            a.)<input type="radio" name="q5" value="right" />
+            <img src="images/right.png" />
+          </label>
+          <label>
+            b.)<input type="radio" name="q5" value="acute" />
+            <img src="images/acute.png" />
+          </label>
+          <label>
+            c.)<input type="radio" name="q5" value="obtuse" />
+            <img src="images/obtuse.png" />
+          </label>
+        </section>
+
+        <section class="questions">
+          <p>Q.6) Which among the following is an acute angle triangle?</p>
+          <label>
+            a.)<input type="radio" name="q6" value="acute" />
+            <img src="images/acute.png" />
+          </label>
+          <label>
+            b.)<input type="radio" name="q6" value="obtuse" />
+            <img src="images/obtuse.png" />
+          </label>
+          <label>
+            c.)<input type="radio" name="q6" value="right" />
+            <img src="images/right.png" />
+          </label>
+        </section>
+        <div class="button-div">
+          <button type="button" id="quizCheckBtn">Check Score</button>
+          <button type="button" id="quizResetBtn" class="reset">Reset</button>
+        </div>
+      </form>
+      <p id="quizOutput"></p>
+    </div>
+
+    <div id="hypoDiv">
+      <h2>Hypotenuse</h2>
+      <img src="images/blank.png" />
+      <label for="a"
+        >a=<input id="a" type="number" placeholder="(in cm)"
+      /></label>
+      <label for="b"
+        >b=<input id="b" type="number" placeholder="(in cm)"
+      /></label>
+      <label for="c"
+        >c=<input id="c" type="number" disabled placeholder="?"
+      /></label>
+      <div class="button-div">
+        <button id="hypoCalculateBtn">Calculate</button>
+        <button id="hypoResetBtn" class="reset">Reset</button>
+      </div>
+      <p id="hypoOutput"></p>
+    </div>
+
+    <div id="areaDiv">
+      <h2>Area of Triangle</h2>
+      <label for="Base">Base(in cm)</label>
+      <input id="Base" type="number" placeholder="(in cm)" />
+      <label for="Height">Height (in cm)</label>
+      <input id="Height" type="number" placeholder="(in cm)" />
+      <div class="button-div">
+        <button id="areaCalculateBtn">Calculate</button>
+        <button id="areaResetBtn" class="reset">Reset</button>
+      </div>
+      <p id="areaOutput"></p>
+    </div>
+    <footer>
+      <div>Made with ❤️ by HiManshu ;)</div>
+      <ul>
+        <li><a href="https://github.com/05him">Github</a></li>
+        <li><a href="https://twitter.com/HiManshu_0_">Twitter</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/himanshu-1212b3200/">LinkedIn</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-height: 100vh;
+}
+nav {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+nav div {
+  text-align: right;
+}
+nav div button {
+  font-size: 16px;
+  margin: auto 0.2rem;
+  padding: 0.3rem;
+  width: 130px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+nav div button:hover {
+  text-decoration: underline;
+  font-size: 16px;
+}
+h1 {
+  margin-top: 0;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 40px;
+  color: gray;
+  text-decoration: underline;
+}
+label,
+input {
+  display: block;
+  margin: auto;
+}
+label {
+  font-size: 30px;
+  margin: 1.5rem auto 0.3rem;
+}
+input[type="number"] {
+  width: 200px;
+  padding: 0.3rem;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 0.7rem;
+}
+button {
+  width: 130px;
+  padding: 0.3rem;
+  font-size: 16px;
+  margin: auto 0.2rem;
+  margin-top: 2rem;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.12);
+}
+div > p {
+  font-size: 25px;
+}
+footer {
+  background-color: black;
+  height: 10%;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+div {
+  transform: translateX(1.5rem);
+}
+li {
+  display: inline;
+  margin: 1rem;
+  cursor: pointer;
+}
+a {
+  color: white;
+  font-size: 16px;
+}
+a:hover {
+  font-size: 20px;
+}
+
+/* ```````````````````style for hypo```````````````` */
+#hypoDiv label,
+input {
+  display: inline;
+}
+#hypoDiv input {
+  width: 70px;
+}
+#hypoDiv label {
+  position: relative;
+}
+#hypoDiv label:first-of-type {
+  top: -150px;
+  right: 160px;
+}
+#hypoDiv label:nth-of-type(2) {
+  top: -20px;
+  right: 20px;
+}
+#hypoDiv label:last-of-type {
+  top: -190px;
+  right: 90px;
+}
+#hypoDiv img {
+  display: block;
+  margin: auto;
+}
+
+/* ````````````styling for quiz````````````````````` */
+.questions label {
+  display: inline;
+  font-size: 16px;
+  margin-left: 1rem;
+}
+.questions {
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 60%;
+}
+.questions > p {
+  font-size: 22px;
+}
+.guess-img {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+}
