@@ -6,6 +6,9 @@ body {
   text-align: center;
   max-height: 100vh;
 }
+button{
+  cursor:pointer;
+}
 nav {
   background-color: black;
   color: white;
